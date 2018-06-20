@@ -124,7 +124,7 @@ gulp.task("build", function(fn) {
     "copy",
     "less",
     "minjs",
-    "images",
+    // "images",
     "symbols",
     fn
   );
