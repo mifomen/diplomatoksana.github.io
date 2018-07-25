@@ -7,15 +7,15 @@
 &__wrapper {
 
   display:  flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   flex-direction:  row; 
   margin-left: 100px;
   margin-right:  100px;
   align-items: center;
-  @media @mobile {
-  margin-left: 10px;
-  margin-right:  10px;
- }
+  @media #{$mobile} {
+    margin-left: 10px;
+    margin-right:  10px;
+  }
 }
 &__title {
 width: 100%;
@@ -69,7 +69,7 @@ color: #fff;
   // @media @desktop {
   // width: 400px; 
   // }
-  @media @desktop  {
+  @media #{$desktop}  {
   width: 40%;
 }
   // @media @semi-desktop {

@@ -7,7 +7,7 @@ background-color: rgba(60,84,153,1);
 	margin-right:  100px;
 	align-items: center;
 
-	@media @mobile {
+	@media #{$mobile} {
 		margin-left: 10px;
 		margin-right:  10px;
 	}
@@ -22,10 +22,10 @@ background-color: rgba(60,84,153,1);
 		margin-top: 25px;
 		
 		font-weight: bold;
-		@media @desktop {
+		@media #{$desktop} {
 		width: 600px; 
 	  	}
-		@media @mobile {
+		@media #{$mobile} {
 		width: 300px; 
 		}
 	&::after {
@@ -69,20 +69,20 @@ background-color: rgba(60,84,153,1);
 	margin: 10px auto;
 	outline: 0;
 	resize:none;
-	@media @mobile {
+	@media #{$mobile} {
 	width: 330px;
 	}
-	@media @desktop {
+	@media #{$desktop} {
 	width: 450px;
 	}
 	&-width {
 		width: 730px;
 		height: 250px;
 		margin: 10px auto;
-	@media @mobile {
+	@media #{$mobile} {
 		width: 330px;
 	}
-	@media @desktop {
+	@media #{$desktop} {
 		width: 930px;
 	}
 	}

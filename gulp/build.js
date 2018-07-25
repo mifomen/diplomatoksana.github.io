@@ -1,16 +1,20 @@
 var gulp = require('gulp');
+var cfg = require('../package.json').config;
 var run = require("run-sequence");
-var less = require('gulp-less');
+// var less = require('gulp-less');
 
-
-gulp.task("build", function(fn) {
+gulp.task("build", function(evt) {
   run(
-    "clean",
-    "copy",
-    "less",
-    "minjs",
+    "full-clean",
+    // "copy",
+
+    "html",
+    "sass",
+    "retype-js",
+        "retype-images",
+    "retype-fonts",
     // "images",
-    "symbols",
-    fn
+    // "symbols",
+    evt
   );
 });

@@ -1,12 +1,6 @@
-@mobile: ~"(max-width: 600px)";
-@desktop: ~"(min-width: 1120px)";
-@semi-desktop: ~"(min-width: 1520px)";
-@1820hd: ~"(min-width: 1820px)";
-@1920hd: ~"(min-width: 1920px)";
-@bg-color:rgba(52,75,142,1);
-@bg-color-hover:rgba(39,58,113,1);
+
 body {
-  font-family: "Ro1xboto", 'Times New Roman', Times, serif;
+  font-family: "Roboto", 'Times New Roman', Times, serif;
   padding: 0;
   margin:0 auto;
   min-width: 270px;
@@ -29,7 +23,7 @@ body {
   flex-direction: row;
   justify-content: center;
    flex-wrap: wrap;
-  @media @mobile {
+  @media #{$mobile} {
    flex-direction: columns;
     }
   }
@@ -44,7 +38,7 @@ body {
     border: none;
     width: 70px;
     height: 41px;
-    background-color: @bg-color;
+    background-color: #{$bg-color};
     outline: 0;
     box-sizing: border-box;
           // border: 2px solid darkorange;
@@ -63,7 +57,7 @@ body {
     //   outline:2px solid #fff;
     // outline-offset: -3px;
     }
- @media @mobile {
+ @media #{$mobile} {
   display: block;
 
  } 
@@ -72,7 +66,7 @@ body {
   &__item {
    margin:0;
   padding:0; 
-  @media @mobile {
+  @media #{$mobile} {
  width: 295px;
 }
   }
@@ -89,7 +83,7 @@ body {
   padding-top: 10px;
   padding-bottom: 5px;
 
-  @media @mobile {
+  @media #{$mobile} {
     width: 270px;
     
     box-sizing: border-box;
@@ -102,7 +96,7 @@ body {
   &:hover {
   background-color: rgba(39,58,113,1);
   border-bottom:5px solid #fff;
-    @media @mobile{
+    @media #{$mobile}{
     width: 270px;
      border-bottom:1px solid rgba(0,0,0,0.2);
 
@@ -117,7 +111,7 @@ body {
  justify-content: center;
  align-content: center;
 
-@media @desktop {
+@media #{$desktop} {
  align-items: center;
 
 }
@@ -135,7 +129,7 @@ background-image:url('../img/intro-bg-desktop.jpg');
  background-position: 50% 0;
  margin:0;
  padding:0;
- @media @mobile { 
+ @media #{$mobile} { 
    background-image:url('../img/bg-desktop.jpg');
  }
   &__title{
@@ -145,7 +139,7 @@ background-image:url('../img/intro-bg-desktop.jpg');
  margin:0;
  padding:0;
 height: 50px;
-@media @mobile {
+@media #{$mobile} {
  font-size:26px;
 
 
@@ -247,7 +241,7 @@ height: 50px;
 // }
 // }
 
-@media @mobile {
+@media #{$mobile} {
 .menu-nav--closed .menu-nav__item {
   display: none;
   &--active {

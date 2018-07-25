@@ -1,3 +1,4 @@
+
 .achivements {
 background-color: rgba(255,221,153,1);
 &__wrapper {
@@ -9,7 +10,7 @@ flex-direction:  column;
  margin-left: 100px;
  margin-right:  100px;
 
-  @media @mobile {
+  @media #{$mobile} {
   margin-left: 10px;
   margin-right:  10px;
  }
@@ -68,21 +69,21 @@ flex-direction: column;
   transition: 500ms linear;
   transform: scale(1.2);
  }
- @media @mobile {
+ @media #{$mobile} {
   &:hover {
   transition: 500ms linear;
   transform: scale(1);
  }
   height: 250px;
  }
- @media @desktop {
+ @media #{$desktop} {
   height: 500px;
  }
-   @media @1820hd {
+   @media #{$a1820hd} {
     width: 700px; 
 
   }
-    @media @1920hd {
+    @media #{$a1920hd} {
     width: 800px; 
 
   }
