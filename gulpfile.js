@@ -14,15 +14,15 @@ gulp.task('pug',function(){
   .pipe(gulp.dest('build/'));
 });
 
-  gulp.task('scss',function () {
-    return gulp.src('src/scss/main.scss')
-      .pipe($.plumber())
-      .pipe($.sass()).on('error', $.sass.logError)
-      .pipe($.csso())
-           .pipe($.rename('style.min.css'))
-      .pipe(gulp.dest('build/css'))
+gulp.task('scss',function () {
+  return gulp.src('src/scss/main.scss')
+    .pipe($.plumber())
+    .pipe($.sass()).on('error', $.sass.logError)
+    .pipe($.csso())
+         .pipe($.rename('style.min.css'))
+    .pipe(gulp.dest('build/css'))
 
-  });
+});
 
 gulp.task('watch', function() {
   // gulp.parallel(styles, scripts)
