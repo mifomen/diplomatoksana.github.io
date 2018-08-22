@@ -50,6 +50,20 @@ gulp.task('img', function() {
 .pipe(gulp.dest('build/img'))
 });
 
+gulp.task('compress-js', function() {
+  return gulp.src('src/js/main.js')
+  .pipe($.plumber())
+  .pipe($.uglify())
+  .pipe($.rename('main.min.js'))
+  .pipe(gulp.dest('build/js'))
+
+});
+
+gulp.task('clear', function() {
+  return gulp.src( 'build/**/*', { read: false })
+  .pipe( $.rm({ async: false }) )
+})
+
 gulp.task('serve', function (){
   browserSync.init({
     server: {
@@ -61,11 +75,14 @@ gulp.task('serve', function (){
   }),
   gulp.watch("src/scss/**/*.scss",  gulp.parallel('scss')).on("change", browserSync.reload);
   gulp.watch("src/pug/**/*.pug",  gulp.parallel('pug')).on("change", browserSync.reload);
+ gulp.watch("src/js/**/*.js",  gulp.parallel('compress-js')).on("change", browserSync.reload);
+
 })
 
 gulp.task('build', 
   gulp.series(
-    'pug', 
+    'clear',
+      gulp.parallel('pug', 'compress-js'),
     gulp.parallel('img', 'scss'),
     'serve'
     ));
