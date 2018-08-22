@@ -10,9 +10,10 @@ b {
   margin:0;
   padding-top: 10px;
 background-color: red;
+transition: 300ms ease;
 }
 
-// @import "blocks/variables.scss";
+@import "blocks/variables.scss";
 // @import "blocks/fonts.scss";
 
 // /*Стилизация верхней части*/
