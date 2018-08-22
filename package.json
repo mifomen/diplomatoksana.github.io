@@ -1,56 +1,29 @@
 {
-  "name": "diplomatoksana",
-  "version": "0.0.5",
-  "description": "layout site",
+  "name": "diplomatoksana.github.io",
+  "version": "1.0.0",
+  "description": "This is a typical layout for website teacher.",
   "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp build",
-    "start": "gulp build && gulp serve",
-    "less": "gulp less"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mifomen/diplomatoksana.github.io.git"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mifomen/diplomatoksana.github.io/issues"
   },
-  "config": {
-    "src": {
-      "sass": "src/scss"
-    },
-    "build": {
-      "css": "build/css"
-    }
-  },
-  "homepage": "https://github.com/mifomen/diplomatoksana.github.io#readme",
-  "devDependencies": {
-    "autoprefixer": "^8.2.0",
-    "browser-sync": "^2.24.6",
-    "css-mqpacker": "^6.0.2",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.4.0",
-    "gulp-cli": "^2.0.1",
-    "gulp-csso": "^3.0.1",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-html-minify": "0.0.14",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-newer": "^1.4.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-postcss": "^7.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.1",
-    "gulp-svgmin": "^1.2.4",
-    "gulp-svgstore": "^6.1.1",
-    "gulp-uglify": "^3.0.0",
-    "require-dir": "^1.0.0",
-    "run-sequence": "^2.2.1"
-  },
-  "dependencies": {
-    "npm": "^6.2.0"
-  }
+  "homepage": "https://github.com/mifomen/diplomatoksana.github.io#readme"
 }
