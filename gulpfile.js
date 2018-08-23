@@ -77,7 +77,8 @@ gulp.task('serve', function (){
     ui: false
   }),
   gulp.watch("src/scss/**/*.scss",  gulp.parallel('scss')).on("change", browserSync.reload);
-  gulp.watch("src/pug/**/*.pug",  gulp.parallel('pug')).on("change", browserSync.reload);
+  // gulp.watch("src/pug/**/*.pug",  gulp.parallel('pug')).on("change", browserSync.reload);
+    gulp.watch("src/pug/**/*.pug",  gulp.parallel('pug'));
  gulp.watch("src/js/**/*.js",  gulp.parallel('compress-js')).on("change", browserSync.reload);
 
 })
