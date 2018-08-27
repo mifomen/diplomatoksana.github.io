@@ -1,15 +1,17 @@
-# oksanaprin
-This is a typical layout for website teacher.
-
-Technology used:
-Less/Gulp
-
-To install:
-
-npm install
-npm install gulp
-npm start
+# [oksanaprin.ru]("oksanaprin.ru") 
 
 
-Layout made by abc1057001117
-January 2018
+typucal layout  scrolling one page
+
+Use technology
+SCSS/Gulp.v4
+***
++ For install:
+***
+1. npm install && audit fix
+2. npm start
+
+***
+
+Layout made by LizArt / Coding by abc1057001117
+August 2018
