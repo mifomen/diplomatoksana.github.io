@@ -1,16 +1,30 @@
-//- index.pug
 doctype html
 html(lang="ru-RU")
 head
-  title Hellow world
-  link(rel="stylesheet" type="text/css" href="css/style.min.css")
+ title Hellow world
+ link(rel="stylesheet" type="text/css" href="css/style.min.css")
 
 body
- .slider
-  .slider-item
-  .slider-item
-  .slider-item
-  .slider-item
+ header.header#header
+  //- img.header__img(src='img/first.jpg')
+  nav.nav-menu
+   ul.nav-menu__list
+    li.nav-menu__item 
+     a.nav-menu__link(href="#") Книги и публикации
+    li.nav-menu__item 
+     a.nav-menu__link(href="#") Контакты
+    li.nav-menu__item
+     a.nav-menu__link(href="#") Поиск
+ main.main#main
+  h1.main__title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo itaque numquam iure eaque, esse, necessitatibus alias quas impedit iusto reprehenderit tempore quae laboriosam eos, velit ea amet unde vel deleniti!
+  div.about-author
+   h1.about-author__title Оксана Принь
+   h2.about-author__special Учитель географии и экологии
+   img.about-author__img(src='img/first.jpg')
+  div.scroll__down scroll down
+
+
+
 
 
 
