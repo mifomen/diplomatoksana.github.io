@@ -1,4 +1,7 @@
 console.log('come')
+$(document).ready(function(){
+    $('.slider').slick();
+});
 //  var nojs=document.querySelector(".menu-nav-nojs"),
 // menu=document.querySelector(".menu-nav__toggle"),
 // close=document.querySelector(".menu-nav--closed"),

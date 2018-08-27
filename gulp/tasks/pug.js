@@ -7,7 +7,9 @@ $.gulp.task('pug',function(){
   }))
   .pipe($.gp.rename('index.html'))
   .pipe($.gulp.dest('build/'))
-  .on('end',$.bs.reload)
+    .pipe($.bs.reload({
+      stream: true
+    }))
 })
 
 }

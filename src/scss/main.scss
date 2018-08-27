@@ -1,31 +1,31 @@
-body {
-  background-color: yellow;
-}
-h1,
-h4,
-h3,
-h2,
-p,
-b {
-  margin:0;
-  padding-top: 10px;
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+.slider {
   background-color: red;
-  transition: 300ms ease;
 }
-
-@import "blocks/variables.scss";
-// @import "blocks/fonts.scss";
-
-// /*Стилизация верхней части*/
-// @import "blocks/header.scss";
-// /*Основной блок*/
-// @import "blocks/main.scss";
-// /*блок об авторах*/
-// @import "blocks/achivements.scss";
-// @import "blocks/our-pluses.scss";
-// /*блок об авторах*/
-// @import "blocks/authors.scss";
-// /*форма обратной связи11*/
-// @import "blocks/feedback.scss";
-// /*подвал сайта*/
-// @import "blocks/footer.scss";
+.slider-item {
+  background-color: #eda;
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  margin: 20px;
+}
+.slider-item:nth-child(0) {
+  background-color: yellow;
+  content:"2";
+}
+.slider-item:nth-child(1) {
+  background-color: green;
+  content:"3";
+}
+.slider-item:nth-child(2) {
+  background-color: darkorange;
+  content:"3";
+}
+.slider-item:nth-child(3) {
+  background-color: blue;
+  content:"3";
+}
+.slider-item:nth-last-child(0) {
+  background-color: orange;
+  content:"3";
+}
