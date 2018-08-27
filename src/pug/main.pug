@@ -1,12 +1,8 @@
 doctype html
 html(lang="ru-RU")
-head
- title Hellow world
- link(rel="stylesheet" type="text/css" href="css/style.min.css")
-
+ include pages/head.pug
 body
  header.header#header
-  //- img.header__img(src='img/first.jpg')
   nav.nav-menu
    ul.nav-menu__list
     li.nav-menu__item 
@@ -17,16 +13,38 @@ body
      a.nav-menu__link(href="#") Поиск
  main.main#main
   h1.main__title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo itaque numquam iure eaque, esse, necessitatibus alias quas impedit iusto reprehenderit tempore quae laboriosam eos, velit ea amet unde vel deleniti!
-  div.about-author
-   h1.about-author__title Оксана Принь
-   h2.about-author__special Учитель географии и экологии
-   img.about-author__img(src='img/first.jpg')
-  div.scroll__down scroll down
-
-
-
-
-
+  section.author-intro#1
+   h1.author-intro__title Оксана Принь
+   h2.author-intro__special Учитель географии и экологии
+   img.author-intro__img(src='img/first.jpg')
+  section.scroll__down scroll down
+  section.about-author#1
+   h1.about-author__title О себе
+   p.about-author__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur maxime, assumenda eveniet. A et itaque voluptate sit blanditiis officiis molestiae, mollitia voluptatum, harum quas in voluptas accusantium veniam odit laborum. Cumque nam aliquid voluptatibus unde commodi, doloremque eligendi sint recusandae facere necessitatibus tempora tenetur eaque repudiandae quam, dignissimos! Aspernatur a rem facere omnis! Repellendus neque, non dicta, dolorum dolore quaerat?
+   blockquote.about-author__quote Единственный путь ведущий к знаниям  - это деятельность
+   q.about-author__cite Бернард шоу
+  section.what-i-do#2
+    img(src="#",alt="none").what-i-do__img
+    h1.what-i-do__title  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    p.what-i-do__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minima quia perspiciatis earum illo tempore velit at quod ullam facere numquam voluptas adipisci, porro dolorem molestiae. Officia, magnam minima eaque.
+    button(type="button").what-i-do__more-books подробнее
+    button(type="button").what-i-do__download-books скачать
+  section.lessons-book#3
+    h1.lessons-book__title  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    p.lessons-book__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minima quia perspiciatis earum illo tempore velit at quod ullam facere numquam voluptas adipisci, porro dolorem molestiae. Officia, magnam minima eaque.
+    button(type="button").lessons-book__more-books подробнее
+    button(type="button").lessons-book__download-books скачать
+    img(src="#",alt="none").lessons-book__img
+  section.my-grants#5
+    h1.my-grants__title  Сертификаты и дипломы
+    p.my-grants__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minima quia perspiciatis earum illo tempore velit at quod ullam facere numquam voluptas adipisci, porro dolorem molestiae. Officia, magnam minima eaque.
+    button(type="button").my-grants__more-books Предыдущий
+    button(type="button").my-grants__download-books следующий
+    img(src="#",alt="none").my-grants__img
+    img(src="#",alt="none").my-grants__img
+    img(src="#",alt="none").my-grants__img
+  section.my-articles#6 Мои статьи
+ include pages/footer.pug
 
 script(src="js/libs.min.js")
 script(src="js/main.min.js")
