@@ -3,7 +3,7 @@ module.exports = function () {
   // Backend locales
   return $.gulp.src('src/**/metrika.html')
   .pipe($.gp.html2pug(
-   { fragment: true }
+   { fragment: false }
    // /* options for html2pug such as { fragment: true } */
    ))
   .pipe($.gp.rename('metrika.pug'))

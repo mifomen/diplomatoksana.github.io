@@ -1,6 +1,12 @@
 .header__img {
   border:2px solid darkorange;
 }
+img {
+ border:2px solid darkorange;
+}
+* {
+ outline: 2px solid darkblue;
+}
 
 // @import "../../node_modules/slick-carousel/slick/slick.scss";
 // .slider {
