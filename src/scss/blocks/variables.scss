@@ -2,13 +2,13 @@
 // $tablet: "(min-width: 768px)";
 // $desktop: "(min-width: 1366px)";
 
-// @media #{$mobile}
-// #{$tablet}
-// #{$desktop}
 $mobile: "(max-width: 600px)";
-$desktop: "(min-width: 1120px)";
-$semi-desktop: "(min-width: 1520px)";
-$a1820hd: "(min-width: 1820px)";
-$a1920hd: "(min-width: 1920px)";
+$tablet: "(min-width: 1120px)";
+$desktop: "(min-width: 1440px)";
+
+$mobile-w: "600px";
+$tablet-w: "1120px";
+$desktop-w: "1440px";
+
 $bg-color:rgba(52,75,142,1);
 $bg-color-hover:rgba(39,58,113,1);

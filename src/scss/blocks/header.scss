@@ -1,0 +1,37 @@
+.header {
+ padding-top: 20px;
+ &__wrapper {
+  width: 1200px;
+  // outline: 2px solid green;
+  // outline-offset: -3px;
+  margin: 0 auto;
+ }
+}
+.nav-menu {
+
+ &__list {
+  display: flex;
+  list-style: none;
+  margin:0;
+  padding:0;
+  justify-content: flex-end;
+  font-size: 18px;;
+ }
+ &__item {
+  margin-right: 5%;
+  &:hover {
+
+  }
+ }
+ &__link {
+  border-top: 2px solid grey;
+  width: 200px;
+  display: block;
+  color: black;
+  text-decoration: none;
+  &:hover {
+   border-top: 2px solid darkorange;
+   text-decoration: underline;
+  }
+ }
+}

@@ -1,12 +1,22 @@
+@import "blocks/header.scss";
+@import "blocks/variables.scss";
+
+body {
+ width: #{$desktop-w};
+ margin: 0 auto;
+ outline:2px solid darkorange;
+}
+
+
 .header__img {
   border:2px solid darkorange;
 }
 img {
  border:2px solid darkorange;
 }
-* {
- outline: 2px solid darkblue;
-}
+// * {
+//  outline: 2px solid darkblue;
+// }
 
 // @import "../../node_modules/slick-carousel/slick/slick.scss";
 // .slider {

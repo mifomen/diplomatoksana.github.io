@@ -3,16 +3,15 @@ module.exports = function () {
     $.gulp.series(
       'clear',
       // 'html2pug',
-      'pug',
-      $.gulp.parallel('img', 'scss'),
-      $.gulp.parallel('scripts:lib','script'),
-    'serve',
-    'watch'
+      // 'pug',
+      $.gulp.parallel('pug','img', 'scss'),
+      $.gulp.parallel('scripts:lib','script')
+    // 'serve',
+    // 'watch'
     ));
   $.gulp.task('default', 
     $.gulp.series(
       'build',
-      'serve',
-      'watch'
+      'serve'
       ));
 }
