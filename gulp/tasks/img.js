@@ -5,7 +5,7 @@ module.exports = function () {
       [
       $.gp.imagemin.gifsicle({interlaced: true}),
       $.gp.imagemin.jpegtran({progressive: true}),
-      $.gp.imagemin.optipng({optimizationLevel: 5}),
+      $.gp.imagemin.optipng({optimizationLevel: 7}),
       $.gp.imagemin.svgo({
         plugins: [
         {removeViewBox: true},
