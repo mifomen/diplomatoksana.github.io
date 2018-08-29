@@ -1,5 +1,6 @@
 module.exports = [
 './gulp/tasks/html2pug',
+'./gulp/tasks/copy-css',
 './gulp/tasks/pug',
 './gulp/tasks/scss',
 './gulp/tasks/watch',
