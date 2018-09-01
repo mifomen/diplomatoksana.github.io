@@ -1,19 +1,29 @@
-@import "blocks/header.scss";
 @import "blocks/variables.scss";
-
+@import "blocks/animations.scss";
 body {
  width: #{$desktop-w};
  margin: 0 auto;
  outline:2px solid darkorange;
+ // display: block;
+ // overflow: hidden;
+ font-family: 'Merriweather', serif;
+ position: relative;
+ z-index: 0;
+height: 9000px;
 }
 
-
-.header__img {
-  border:2px solid darkorange;
-}
 img {
  border:2px solid darkorange;
 }
+
+@import "blocks/header.scss";
+@import "blocks/main.scss";
+
+
+@import "blocks/author-intro.scss";
+
+@import "blocks/scroll.scss";
+@import "blocks/mixins.scss";
 // * {
 //  outline: 2px solid darkblue;
 // }

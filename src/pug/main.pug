@@ -4,22 +4,29 @@ html(lang="ru-RU")
   include pages/head.pug
 body
  header.header#header
+  div.header__circle-shape
+   div.header__circle
+  img.header__sign(src="img/sign.png" alt='singnature')
   div.header__wrapper
     nav.nav-menu
      ul.nav-menu__list
       li.nav-menu__item 
        a.nav-menu__link(href="#") Книги и публикации
       li.nav-menu__item 
-       a.nav-menu__link(href="#") Контакты
+       a.nav-menu__link.w125(href="#") Контакты
       li.nav-menu__item
-       a.nav-menu__link(href="#") Поиск
+       a.nav-menu__link.w125(href="#") Поиск
  main.main#main
-  h1.main__title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo itaque numquam iure eaque, esse, necessitatibus alias quas impedit iusto reprehenderit tempore quae laboriosam eos, velit ea amet unde vel deleniti!
-  section.author-intro#1
-   h1.author-intro__title Оксана Принь
-   h2.author-intro__special Учитель географии и экологии
-   img.author-intro__img(src='img/first.jpg')
-  section.scroll__down scroll down
+  h1.main__title Следует добавить, что и другие генетические типы <strong>четвертичных</strong> отложений бентос постоянно изменяет кряж, где на поверхность выведены <strong>кристаллические</strong> структуры фундамента.
+  section.author-intro.row#1
+   div.col-lg-4
+    h1.author-intro__title Оксана Принь
+    h2.author-intro__special Учитель географии и экологии
+   div.col-lg-4
+    img.author-intro__img(src='img/prin.png' alt='prin o.n.' height="575px" width="575px")
+  section.scroll 
+   p.scroll__name scroll down
+   p.scroll__icon 
   section.about-author#1
    h1.about-author__title О себе
    p.about-author__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur maxime, assumenda eveniet. A et itaque voluptate sit blanditiis officiis molestiae, mollitia voluptatum, harum quas in voluptas accusantium veniam odit laborum. Cumque nam aliquid voluptatibus unde commodi, doloremque eligendi sint recusandae facere necessitatibus tempora tenetur eaque repudiandae quam, dignissimos! Aspernatur a rem facere omnis! Repellendus neque, non dicta, dolorum dolore quaerat?

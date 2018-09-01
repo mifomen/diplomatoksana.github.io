@@ -1,9 +1,40 @@
 .header {
+  position: relative;
  padding-top: 20px;
+ z-index: 1;
+ &__circle-shape {
+   overflow: hidden;
+   outline: 2px solid green;
+   margin: 0;
+   padding: 0;
+     width: 325px;
+  height: 325px;
+  position: absolute;
+  top:-100px;
+  left:0;
+ }
+ &__circle {
+  display: block;
+  width: 575px;
+  height: 575px;
+  border: 140px solid rgb(252, 218, 218);
+  border-radius: 50%;
+ 
+  position: relative;
+  top: -275px;
+  left: -275px;
+  z-index: 0;
+
+  
+ }
+ &__sign {
+  position: absolute;
+  left: 100px;
+  z-index: 0;
+ }
  &__wrapper {
   width: 1200px;
-  // outline: 2px solid green;
-  // outline-offset: -3px;
+
   margin: 0 auto;
  }
 }
@@ -15,7 +46,7 @@
   margin:0;
   padding:0;
   justify-content: flex-end;
-  font-size: 18px;;
+  font-size: 13px;
  }
  &__item {
   margin-right: 5%;
@@ -29,6 +60,7 @@
   display: block;
   color: black;
   text-decoration: none;
+  padding-top: 7px;
   &:hover {
    border-top: 2px solid darkorange;
    text-decoration: underline;
