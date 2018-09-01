@@ -12,15 +12,17 @@ body {
 height: 9000px;
 }
 
-img {
- border:2px solid darkorange;
-}
+// img {
+//  border:2px solid darkorange;
+// }
 
 @import "blocks/header.scss";
 @import "blocks/main.scss";
 
 
 @import "blocks/author-intro.scss";
+
+@import "blocks/about-author.scss";
 
 @import "blocks/scroll.scss";
 @import "blocks/mixins.scss";

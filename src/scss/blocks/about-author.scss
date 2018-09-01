@@ -1,0 +1,70 @@
+.about-author {
+  display: flex;
+  * {
+    outline: 2px solid #ddd;
+  }
+  justify-content: center;;
+  flex-wrap: wrap;
+  position: relative;
+  &__title {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: bold;
+
+    &::after {
+      position: absolute;
+      left:50%;
+      transform: translateX(-50%);
+      bottom:-10px;
+      content:'';
+      // top:0;
+      width: 275px;
+      height:1px;
+      background-color: #BBB;
+    }
+
+  }
+  &__theme {
+    position: absolute;
+    right:-15px;
+    top: 25%;
+    letter-spacing: 15px;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'El Messiri', sans-serif;
+    transform: rotate(90deg);
+  } 
+  &__text {
+    font-size: 14px;
+    line-height: 1.8;
+    width: 50%;
+    text-align: center;
+    margin-top:2%;
+  }
+
+  &__quote {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__span {
+    width: 45%;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__cite {
+    margin-top: 2%;
+    // text-align: right;
+    margin-left: auto;
+    color: #5E5E5E;
+    font-style: italic;
+  }
+}
