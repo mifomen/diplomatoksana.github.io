@@ -1,0 +1,30 @@
+.what-i-do {
+  * {
+    outline: 2px solid #ddd;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &__img {
+    width: 400px;
+    height: auto;
+  }
+  &__wrapper {
+    width: auto;
+
+  }
+  &__title {
+    font-size: 36px;
+  }
+  &__description {
+    font-size: 14px;
+    @extend .secondfont;
+  }
+  &__more-books {
+    @extend .button_dl;
+
+  }
+  &__download-books {
+  @extend .button_dl;
+  }
+}

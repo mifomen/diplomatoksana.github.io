@@ -5,3 +5,26 @@
 .basic-circle {
   
 }
+.mainfont {
+  font-family: 'Merriweather', serif;
+}
+.secondfont {
+  font-family: 'El Messiri', sans-serif;
+}
+.button_dl {
+  background-color: transparent;
+  border: 0px solid transparent;
+  outline: 0px solid transparent;
+  color: #F24545;
+  text-decoration: none;
+  line-height: 2;
+  padding:0;
+  margin:0;
+  // padding-bottom: 2px;
+ &:hover,
+ &:active {
+  color: #F24545;
+  text-decoration: udnerline;
+ }
+}
+
