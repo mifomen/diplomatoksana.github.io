@@ -1,0 +1,21 @@
+.lessons-books {
+
+
+  &__title {
+     @extend .secondfont;
+     font-size: 36px;
+
+  }
+  &__description {
+    font-size: 14px;
+
+  }
+  &__more-books {
+      @extend .button_dl;
+
+  }
+  &__download-books {
+      @extend .button_dl;
+
+  }
+}
