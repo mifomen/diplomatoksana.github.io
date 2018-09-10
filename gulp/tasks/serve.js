@@ -13,5 +13,6 @@ module.exports = function () {
     $.gulp.watch("src/js/**/*.js",  $.gulp.parallel('script'));
     $.gulp.watch("src/pug/html2pug/*.html",  $.gulp.series('html2pug','pug'));
     $.gulp.watch("src/**/*.html",  $.gulp.series('html'));
+       $.gulp.watch("src/**/*.{png,jpg,gif,svg}",  $.gulp.series('copy-img'));
   })
 }
