@@ -10,6 +10,6 @@ module.exports = function () {
   .pipe($.gulp.dest('./build/'))
   .pipe($.bs.reload({
    stream: true
-  }))
- });
+ }))
+});
 }

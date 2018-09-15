@@ -1,5 +1,5 @@
 module.exports = function () {
-  $.gulp.task('img', function() {
+  $.gulp.task('img-min', function() {
     return $.gulp.src('src/img/*.{jpg,png,gif,svg}')
     .pipe($.gp.imagemin(
       [

@@ -29,8 +29,8 @@
     "gulp-uglify": "^3.0.1"
   },
   "scripts": {
-    "test": "gulp build",
-    "start": "gulp build && gulp serve"
+    "test": "gulp build && gulp serve",
+    "start": "gulp final && gulp serve"
   },
   "repository": {
     "type": "git",

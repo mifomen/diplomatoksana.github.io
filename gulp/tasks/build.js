@@ -3,22 +3,33 @@ module.exports = function () {
     $.gulp.series(
       'clear',
       'copy-css',
-      // 'html2pug',
-      // 'pug',
       'html',
-      // 'img',
       'copy-img',
       'scss',
       'scripts:lib',
       'script'
-      // $.gulp.parallel('pug','img', 'scss'),
       // $.gulp.parallel('scripts:lib','script')
-    // 'serve',
-    // 'watch'
-    ));
-  $.gulp.task('default', 
+      ));
+  $.gulp.task('f-build', 
+    $.gulp.series(
+      'clear',
+      'copy-css',
+      'html',
+      'img-min',
+      'scss',
+      'scripts:lib',
+      'script'
+      ));
+
+  $.gulp.task('final', 
     $.gulp.series(
       'build',
+      'serve'
+      ));
+  
+  $.gulp.task('default', 
+    $.gulp.series(
+      'f-build',
       'serve'
       ));
 }

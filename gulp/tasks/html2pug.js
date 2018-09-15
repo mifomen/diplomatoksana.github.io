@@ -10,6 +10,6 @@ module.exports = function () {
   .pipe($.gulp.dest('./src/pug/pages'))
   .pipe($.bs.reload({
    stream: true
-  }))
- });
+ }))
+});
 }

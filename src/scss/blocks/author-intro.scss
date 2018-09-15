@@ -1,5 +1,8 @@
 .author-intro {
   // outline: 2px solid;
+  // * {
+  //     outline: 2px solid;
+  // }
   margin-top: 4%;
   display: flex;
   justify-content: center;
@@ -14,34 +17,45 @@
   }
   &__special {
    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #F24545;
-    width: 40%;
+   padding: 0;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #F24545;
+   width: 40%;
 
-  }
-  &__img {
-    position: relative;
-    z-index: 1;
+ }
+ &__img-content {
+  position: relative;
+  // width: 567px;
+  // height: 610px;
+  // outline: 2px solid darkblue;
+  overflow: hidden;
+}
+&__img {
+  position: relative;
+  z-index: 1;
+  width: 570px;
+  height: 610px;
+  border-radius: 5px;
+  // outline: 2px solid darkorange;
 
-  }
- //  .header {
+}
+//  .header {
  //  position: relative;
  // padding-top: 20px;
  // z-index: 1;
  &__circle-shape {
    overflow: hidden;
-   // outline: 2px solid green;
+
    margin: 0;
    padding: 0;
-     width: 720px;
-  height: 720px;
-  position: absolute;
-  right:10px;
-  top:0;
-  right: -60%;
-  // left:0;
+   width: 720px;
+   height: 720px;
+   position: absolute;
+   right:10px;
+   top:0;
+   right: -230px;
+   // left:0;
  }
  &__circle {
   display: block;
@@ -49,12 +63,12 @@
   height: 720px;
   border: 200px solid rgba(249, 171, 171,1);
   border-radius: 50%;
- 
+
   position: relative;
   // top: -275px;
   left: 125px;
   z-index: 0;
 
   
- }
+}
 }

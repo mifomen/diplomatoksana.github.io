@@ -11,8 +11,7 @@ module.exports = function () {
     $.gulp.watch("src/scss/**/*.scss",  $.gulp.parallel('scss'));
     $.gulp.watch("src/pug/**/*.pug",  $.gulp.parallel('pug'));
     $.gulp.watch("src/js/**/*.js",  $.gulp.parallel('script'));
-    // $.gulp.watch("src/pug/html2pug/*.html",  $.gulp.series('html2pug','pug'));
     $.gulp.watch("src/**/*.html",  $.gulp.series('html'));
-       $.gulp.watch("src/**/*.{png,jpg,jpeg,gif,svg}",  $.gulp.series('clear-img','copy-img'));
+    $.gulp.watch("src/img/*.*",  $.gulp.series('clear-img','copy-img'));
   })
 }
