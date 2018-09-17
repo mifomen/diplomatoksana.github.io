@@ -28,3 +28,23 @@
  }
 }
 
+
+.search-btn {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #F24545; 
+  border-radius: 50%;
+  position: relative;
+
+::before {
+  content:'';
+  display: block;
+  width: 55px;
+  height: 62px;
+  right: 25px;
+  position: absolute;
+  background-color: #F24545; 
+  // border-radius: 50%;
+}
+}

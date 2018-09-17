@@ -1,8 +1,8 @@
 .about-author {
   display: flex;
-  * {
-    outline: 2px solid #ddd;
-  }
+  // * {
+  //   outline: 2px solid #ddd;
+  // }
   justify-content: center;;
   flex-wrap: wrap;
   position: relative;
@@ -39,32 +39,71 @@
   &__text {
     font-size: 14px;
     line-height: 1.8;
-    width: 50%;
+    width: 40%;
     text-align: center;
     margin-top:2%;
   }
+&__wrapper {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+position: relative;
+z-index: 2;
+&::after {
+    content: '';
+  background-image: url('../img/quotes.png');
+  position: absolute;
+  width: 92px;
+  height: 78px;
+  right: -45px;
+  bottom: -20px;
+  z-index: -1;
+  // transform: rotate(180deg);
+}
+&::before {
+    content: '';
+  background-image: url('../img/quotes.png');
+  position: absolute;
+  width: 92px;
+  height: 78px;
+  left: -40px;
+  top: -50px;
+  z-index: -1;
+  transform: rotate(180deg);
 
+}
+}
   &__quote {
+    margin-top: 4%;
     width: 100%;
-    text-align: center;
+
     font-size: 18px;
     display: flex;
+
+    text-align: center;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    // * {
+    //   outline: 2px solid;
+    // }
   }
   &__span {
-    width: 45%;
-    text-align: center;
+    width: 100%;
+    // text-align: center;
     font-size: 18px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    // display: flex;
+    // justify-content: center;
+        // flex-direction: column;
+    // flex-wrap: wrap;
   }
   &__cite {
-    margin-top: 2%;
+    margin-top: 1%;
     // text-align: right;
-    margin-left: auto;
+    // margin-left: auto;
     color: #5E5E5E;
+    width: 100%;
+    text-align: right;
     font-style: italic;
   }
 }

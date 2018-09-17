@@ -8,6 +8,18 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-left: 2%;
+  padding-right: 2%;
+  // * {
+  //   outline: 2px solid;
+  // }
+  &__first-column {
+    width: 30%;
+
+  }
+  &__second-column {
+    width: 40%;
+  }
   &__title {
     font-size: 128px;
     margin: 0;
@@ -33,6 +45,8 @@
 }
 &__img {
   position: relative;
+  // display: none;
+  
   z-index: 1;
   width: 570px;
   height: 610px;
@@ -46,18 +60,20 @@
  // z-index: 1;
  &__circle-shape {
    overflow: hidden;
-
+// @extend .out;
+// outline: 2px solid green;
    margin: 0;
    padding: 0;
    width: 720px;
    height: 720px;
    position: absolute;
-   right:10px;
+   right:0px;
    top:0;
-   right: -230px;
+   // right: 30px;
    // left:0;
  }
  &__circle {
+  // outline: 2px solid green;
   display: block;
   width: 720px;
   height: 720px;
